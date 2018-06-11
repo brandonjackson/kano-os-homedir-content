@@ -1,0 +1,4 @@
+How to Write a Story
+====================
+
+Each story has a beginning, middle, and end.

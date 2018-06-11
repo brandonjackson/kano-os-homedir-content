@@ -1,0 +1,19 @@
+/**
+*	style.css
+*
+*   This is the file where you will control how your page looks using CSS.
+*/
+
+/* Add CSS Here */
+
+body {
+	background: orange;
+	font-family: "Bariol", "Sans-Serif";
+}
+.container {
+	background: white;
+	width: 800px;
+	padding: 20px;
+	display: block;
+	margin: 0 auto;
+}

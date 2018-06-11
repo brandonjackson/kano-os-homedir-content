@@ -1,0 +1,24 @@
+#!/bin/bash
+#
+# kano-os-homedir-links
+#
+# Copyright (C) 2018 Kano Computing Ltd.
+# License: http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License v2
+#
+# Regenerates the skeleton folders with the new content from the package
+#
+
+SOURCEDIR="/usr/share/kano-os-homedir-content"
+TARGETDIR="/etc/skel"
+RootFolders=`ls $SOURCEDIR`
+
+# Create the topmost Home Directories if necessary.
+for hdir in $RootFolders; do
+    mkdir --parents "$TARGETDIR"/$hdir
+done
+
+# Create each of the subdirectories from the Package contents,
+# and symlink each file to preserve disk space usage.
+cd $SOURCEDIR
+find -type d -exec mkdir --parents -- "$TARGETDIR"/{} \;
+find -type f -exec ln --force --symbolic -- "$SOURCEDIR"/{} "$TARGETDIR"/{} \;

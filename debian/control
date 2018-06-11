@@ -6,7 +6,7 @@ Standards-Version: 3.9.4
 Build-Depends:
     debhelper (>=9.0.0)
 
-Package: kano-home-button
+Package: kano-os-homedir-content
 Architecture: all
 Depends:
     ${shlibs:Depends},
