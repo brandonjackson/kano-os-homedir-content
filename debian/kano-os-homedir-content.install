@@ -1,2 +1,1 @@
-bin/* /usr/bin
-homedir/* /usr/share/kano-os-homedir-content
+homedir/* /etc/skel

@@ -1,5 +1,6 @@
 kano-os-homedir-content (4.0.0-0) unstable; urgency=low
 
+  * Fixed unable to overwrite files, and duplicate content for each user
   * Added some exciting stuff on your home directory
 
  -- Kano Computing <dev@kano.me>  Mon, 11 Jun 2018 15:27:29 +0100
